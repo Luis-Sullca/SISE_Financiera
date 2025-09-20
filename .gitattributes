@@ -28,7 +28,3 @@
 *.zip    binary
 *.nupkg  binary
 *.snupkg binary
-
-# Opcional: mejorar diff de C#
-[diff "csharp"]
-    xfuncname = ^[ \t]*(public|private|protected|internal|static|sealed|class|interface|struct|enum|namespace|void|async)
