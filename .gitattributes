@@ -1,4 +1,3 @@
-# Normalizar finales de línea: todos los archivos de texto se guardan en el repo con LF
 * text=auto eol=lf
 
 # Archivos de código fuente
