@@ -40,9 +40,9 @@ namespace Financiera.WebApp.Controllers
             {
                 nuevoID = prestamoBL.Registrar(prestamo);
             } 
-            catch
+            catch (Exception ex)
             {
-
+                ViewBag.mensajeAdicional = ex.Message;
             }
 
             if (nuevoID > 0)
