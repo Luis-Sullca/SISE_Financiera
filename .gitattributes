@@ -1,0 +1,34 @@
+# Normalizar finales de línea: todos los archivos de texto se guardan en el repo con LF
+* text=auto eol=lf
+
+# Archivos de código fuente
+*.cs     text diff=csharp
+*.xaml   text
+*.csproj text merge=union
+*.sln    text eol=crlf
+*.props  text
+*.targets text
+
+# Archivos de configuración
+*.config text
+*.json   text
+*.xml    text
+
+# Archivos de documentación
+*.md     text
+*.txt    text
+
+# Archivos que deben tratarse siempre como binarios
+*.dll    binary
+*.exe    binary
+*.pdb    binary
+*.png    binary
+*.jpg    binary
+*.ico    binary
+*.zip    binary
+*.nupkg  binary
+*.snupkg binary
+
+# Opcional: mejorar diff de C#
+[diff "csharp"]
+    xfuncname = ^[ \t]*(public|private|protected|internal|static|sealed|class|interface|struct|enum|namespace|void|async)
